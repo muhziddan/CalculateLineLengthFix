@@ -15,4 +15,9 @@ class LineTest {
     void testCalculateLengthGivenHorizontalLineExpectReturnItsLength() {
         assertEquals(2.0, Line.calculateLength(5, 0, 7, 0));
     }
+
+    @Test
+    void testCalculateLengthGivenHorizontalLineWithMinusDeltaValueExpectReturnItsLength() {
+        assertEquals(4.0, Line.calculateLength(9, 0, 5, 0));
+    }
 }
